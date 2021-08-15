@@ -1,0 +1,7 @@
+/node_modules/
+/gtfs/
+/generated/
+/.cache/
+/dist/
+
+config.ts

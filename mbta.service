@@ -1,0 +1,9 @@
+[Unit]
+Description=yo
+
+[Service]
+ExecStart=/usr/lib/mbta/start.sh
+Restart=always
+
+[Install]
+WantedBy=multi-user.target
