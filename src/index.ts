@@ -4,7 +4,6 @@ import fs from 'fs/promises';
 import { join } from "path";
 import config from '../config';
 import { Gtfs } from "./load-gtfs";
-import { MbtaClient } from "./mbta-client";
 import { Prediction, StreamingEventType } from "./mbta-types";
 import { PredictionHandler } from "./prediction-handler";
 
@@ -61,7 +60,6 @@ async function lol() {
     }, {} as any);
 
     esConnect();
-    const mbtaClient = new MbtaClient();
 
     const app = express();
     app.use((req, res, next) => {
