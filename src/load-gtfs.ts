@@ -3,7 +3,7 @@ import fsp from 'fs/promises';
 import fs from 'fs';
 import parseSync from 'csv-parse/lib/sync';
 import parseStream from 'csv-parse';
-import { routes } from '../index';
+import { routes } from './index';
 
 
 export class Gtfs {

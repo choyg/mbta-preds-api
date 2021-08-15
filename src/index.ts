@@ -3,10 +3,10 @@ import express from 'express';
 import fs from 'fs/promises';
 import { join } from "path";
 import config from '../config';
-import { Gtfs } from "./gtfs/load-gtfs";
+import { Gtfs } from "./load-gtfs";
 import { MbtaClient } from "./mbta-client";
 import { Prediction, StreamingEventType } from "./mbta-types";
-import { PredictionHandler } from "./streaming/prediction-handler";
+import { PredictionHandler } from "./prediction-handler";
 
 const events = Object.values(StreamingEventType);
 export const routes = ['Red', 'Mattapan', 'Orange', 'Green-B', 'Green-C', 'Green-D', 'Green-E', 'Blue'];

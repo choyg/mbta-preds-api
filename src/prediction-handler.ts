@@ -1,4 +1,4 @@
-import { Prediction, PredictionEvent } from "../mbta-types";
+import { Prediction, PredictionEvent } from "./mbta-types";
 
 export class PredictionHandler {
   constructor(
